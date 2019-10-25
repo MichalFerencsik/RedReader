@@ -247,7 +247,7 @@ public final class MarkdownParagraph {
 						caretStart = -1;
 					}
 					break;
-					
+
 				case '(':
 					if (caretStart >= 0){
 						parentOpenCount++;
@@ -317,5 +317,13 @@ public final class MarkdownParagraph {
 			}
 			return true;
 		}
+	}
+
+	public MarkdownParser.MarkdownParagraphType getType() {
+		return type;
+	}
+
+	public CharArrSubstring getRaw() {
+		return raw;
 	}
 }

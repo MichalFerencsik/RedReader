@@ -35,9 +35,9 @@ public class RedditParsedComment implements RedditThingWithIdAndType {
 
 		mSrc = comment;
 
-		mBody = MarkdownParser.parse(StringEscapeUtils.unescapeHtml4(comment.body).toCharArray());
-		if(comment.author_flair_text != null) {
-			mFlair = StringEscapeUtils.unescapeHtml4(comment.author_flair_text);
+		mBody = MarkdownParser.parse(StringEscapeUtils.unescapeHtml4(comment.getBody()).toCharArray());
+		if(comment.getAuthor_flair_text() != null) {
+			mFlair = StringEscapeUtils.unescapeHtml4(comment.getAuthor_flair_text());
 		} else {
 			mFlair = null;
 		}

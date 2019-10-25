@@ -206,4 +206,8 @@ public final class MarkdownParagraphGroup {
 
 		return layout;
 	}
+
+	public MarkdownParagraph[] getParagraphs() {
+		return paragraphs;
+	}
 }

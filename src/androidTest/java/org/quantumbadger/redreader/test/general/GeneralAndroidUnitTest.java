@@ -1,4 +1,4 @@
-package org.quantumbadger.redreader.test;
+package org.quantumbadger.redreader.test.general;
 
 import android.content.Context;
 
@@ -79,13 +79,11 @@ public class GeneralAndroidUnitTest {
 		RRError error = General.getGeneralErrorForFailure(context, APIResponseHandler.APIFailureType.TOO_LONG);
 		assertEquals(error.title, context.getString(R.string.error_too_long_title));
 		assertEquals(error.message, context.getString(R.string.error_too_long_message));
-
 	}
 
 	public void testAlreadySubmittedError() {
 		RRError error = General.getGeneralErrorForFailure(context, APIResponseHandler.APIFailureType.ALREADY_SUBMITTED);
 		assertEquals(error.title, context.getString(R.string.error_already_submitted_title));
 		assertEquals(error.message, context.getString(R.string.error_already_submitted_message));
-
 	}
 }
