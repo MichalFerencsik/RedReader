@@ -29,7 +29,7 @@ import org.quantumbadger.redreader.reddit.url.PostCommentListingURL;
 import java.util.HashSet;
 
 
-public final class RedditComment implements Parcelable, RedditThingWithIdAndType {
+public class RedditComment implements Parcelable, RedditThingWithIdAndType {
 
 	public String body, body_html, author, subreddit;
 	public String author_flair_text;
