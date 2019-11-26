@@ -318,4 +318,12 @@ public final class MarkdownParagraph {
 			return true;
 		}
 	}
+
+	public MarkdownParser.MarkdownParagraphType getType() {
+		return type;
+	}
+
+	public CharArrSubstring getRaw() {
+		return raw;
+	}
 }

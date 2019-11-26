@@ -196,4 +196,13 @@ public final class RedditComment implements Parcelable, RedditThingWithIdAndType
 	public HashSet<String> computeAllLinks() {
 		return LinkHandler.computeAllLinks(StringEscapeUtils.unescapeHtml4(body_html));
 	}
+
+	public String getBody() {
+		return body;
+	}
+
+	public String getAuthor_flair_text() {
+		return author_flair_text;
+	}
+
 }
